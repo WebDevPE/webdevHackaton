@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+#principal {
+  background: #dcf075;
+  float: left;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  margin-right: 500px;
+}
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select {
+  max-width: 250px;
+  position: relative;
+}
+select:hover {
+  background: #b1e8cd;
+}
+select {
+  display: inline-block;
+  width: 80%;
+  cursor: pointer;
+  padding: 7px 10px;
+  height: 42px;
+  outline: 0;
+  border: 0;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #7b7b7b;
+  font-size: 1em;
+  color: #999;
+  font-family: "Quicksand", sans-serif;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+select::-ms-expand {
+  display: none;
+}
+select i {
+  position: absolute;
+  right: 20px;
+  top: calc(50% - 13px);
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-left: 4px solid #2ac176;
+  border-bottom: 4px solid #2ac176;
+  transform: rotate(-45deg); /* Giramos el cuadrado */
+  transition: all 0.25s ease;
+}
+input {
+  background: silver;
+  border: 1px solid #393939;
+  border-radius: 5px 5px 5px 5px;
+  color: #393939;
+  font-size: 12px;
+  padding: 5px;
+}
+img {
+  display: block;
+  margin-left: 5% auto;
+  max-width: 50%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: -2px;
+  padding-left: 30px;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+form {
+  color: #524c56;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+textarea {
+  background: silver;
+  border: 1px solid #ffffff;
+  border-radius: 5px 5px 5px 5px;
+  color: #020204;
+  font-size: 20px;
+  padding: 5px;
+}
+
+#p1 {
+  padding-top: 20px;
+}
+
+#p2 {
+  padding-top: 20px;
+}
+
+#p3 {
+  padding-top: 20px;
+}
+
+nav {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+nav #agrega i {
+  font-size: 300%;
+  margin: 1%;
+  padding-left: 100px;
+  color: #f90202;
+}
+
+nav #RegresoIni i {
+  font-size: 300%;
+  margin: 1%;
+  padding-top: 20px;
+  padding-right: 100px;
+  color: #003ac9;
+}
+nav #Cerrar {
+  font-size: 300%;
+  margin: 1%;
+
+  padding-left: 60px;
+  color: #000103;
+}
+
+#uno {
+  background: #fc11b8;
+}
+
+#dos {
+  background: #fcd3e5;
+}
+#tres {
+  background: #010300;
+}

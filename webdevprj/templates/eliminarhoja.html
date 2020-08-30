@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--editar-->
+    <form method="POST">
+      {% csrf_token %}
+      <h2>Estás seguro que quieres eliminar {{hoja.Titulo}} ?</h2>
+
+      <button type="submit">si</button>
+      <a href="/verhoja">No</a>
+    </form>
+  </body>
+</html>
