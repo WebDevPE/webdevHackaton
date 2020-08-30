@@ -17,34 +17,13 @@
     <section id="principal">
       <img src="{% static 'img/user.png' %} " alt="user" width="50px" />
       <h2>Usuario</h2>
-      <form>
-        <p id="p1">
-          <label for="Carpeta">Carpeta</label><br />
-          <input type="text" name="destino" />
-        </p>
-
-        <p id="p2">
-          <label for="Curso">Cursos: </label>
-          <select name="Cursos">
-            <option value="Lenguaje">Lenguaje</option>
-            <option value="Matematica">Matematica</option>
-            <option value="Religion">Religion</option>
-            <option value="Ciencias">Ciencias</option>
-            <option value="Historia">Historia</option>
-          </select>
-        </p>
-
-        <p id="p3">
-          <label for="Titulo">Titulo</label><br />
-          <input type="text" name="Titulo" />
-        </p>
-      </form>
       <nav>
-        <a href="#" id="agrega"> <i class="fas fa-plus-circle"></i><br /> </a>
         <a href="/verhoja" id="RegresoIni">
           <i class="fas fa-caret-square-left"></i> </a
         ><br />
-        <a href="#" id="Cerrar"> <i class="fas fa-sign-out-alt"></i> </a><br />
+        <a href="/" id="Cerrar"> <i class="fas fa-sign-out-alt"></i> </a><br />
+        <a href="{% url 'editarhoja' hoja.idhoja %}">Editar</a><br />
+        <a href="{% url 'eliminarhoja' hoja.idhoja %}">Eliminar</a><br />
       </nav>
     </section>
 
@@ -68,8 +47,6 @@
       </div>
 
       <p>Fecha: {{hoja.Fecha}}</p>
-      <a href="{% url 'editarhoja' hoja.idhoja %}">Editar</a>
-      <a href="{% url 'eliminarhoja' hoja.idhoja %}">Eliminar</a>
     </div>
   </body>
 </html>
