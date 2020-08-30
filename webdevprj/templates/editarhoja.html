@@ -1,15 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Prototipo</title>
+    <script
+      src="https://kit.fontawesome.com/789db6ec7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
   </head>
   <body>
-    <!--editar-->
-    <form method="POST">
-      {% csrf_token %} {{form}}
-      <button type="submit">editar</button>
+    <section id="principal">
+      <img src="{% static 'img/user.png' %} " alt="user" width="50px" />
+      <h2>Usuario</h2>
+      <!--crear-->
+       <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p id="p1">
+          <p>fecha: {{hoja.Fecha}}</p>
+          <p>IDHoja:{{hoja.idhoja}}</p>
+        </p>
+
+        {{form.as_p}}
+        <input type="submit" value="Editar">
+
+      <nav>
+        <a href="/verhoja" id="RegresoIni">
+          <i class="fas fa-caret-square-left"></i> </a
+        ><br />
+      </nav>
+    </section>
+
+    <div align="center">
+      {{hoja.Titulo}}
+      <div overflow="float" id="uno">
+        <textarea name="Ideas" rows="20" cols="20">
+              {{hoja.Ideas}}
+            </textarea
+        >
+        <textarea name="Tema" rows="20" cols="80">
+            {{hoja.Tema}}
+            </textarea
+        >
+      </div>
+
+      <div id="dos">
+        <textarea name="Resumen" rows="20" cols="100">
+          {{hoja.Resumen}}
+              </textarea
+        >
+      </div>
+    </div>
+     
     </form>
   </body>
 </html>
+    
+     

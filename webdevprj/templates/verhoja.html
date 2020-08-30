@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
   </head>
-  <body>
+  <body class="background-color yellow">
     <h1>Listado de hojas</h1>
     <a
       href="/crearhoja"
@@ -20,7 +20,7 @@
       <div class="col s12 m6 18">
         {% for h in hojas %}
         <div class="collection">
-          <a href="{% url 'ver' h.idhoja %}" class="collection-item active"
+          <a href="{% url 'ver' h.idhoja %}" class="collection-item active blue"
             >{{h.Titulo}}
           </a>
         </div>
