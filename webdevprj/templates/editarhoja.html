@@ -24,7 +24,7 @@
           <p>fecha: {{hoja.Fecha}}</p>
           <p>IDHoja:{{hoja.idhoja}}</p>
         </p>
-
+        <h4>Datos actuales</h4>
         {{form.as_p}}
         <input type="submit" value="Editar">
 
@@ -34,9 +34,10 @@
         ><br />
       </nav>
     </section>
-
-    <div align="center">
-      {{hoja.Titulo}}
+      <div ALIGN="center">
+        <textarea name="Titulo">
+          {{hoja.Titulo}}
+        </textarea>
       <div overflow="float" id="uno">
         <textarea name="Ideas" rows="20" cols="20">
               {{hoja.Ideas}}
